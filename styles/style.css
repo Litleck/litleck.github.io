@@ -3,3 +3,31 @@ body {
   margin: 0;
   overflow: hidden;
 }
+
+button {
+  background-color: #1ED760;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #28ad58;
+  color: white;
+}
+
+button:active {
+  background-color: #288f4d;
+  box-shadow: 0 5px #666;
+}
+
+input {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+}

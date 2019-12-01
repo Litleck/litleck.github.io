@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Planets</title>
+
+    <link rel='stylesheet' href='../styles/style.css'>
+    <link rel='shortcut icon' type='image/png' href='../images/moth.png'>
+
+    <script src='../scripts/matter.js'></script>
+  </head>
+
+  <body>
+    <canvas id='canvas'></canvas>
+
+    <script src='../scripts/physics.js'></script>
+
+    <div align ='center' id='properties' padding="10px">
+      <input id='xPos' type='number' placeholder='X Position'>
+      <input id='yPos' type='number' placeholder='Y Position'>
+
+      <input id='radius' type='number' placeholder='Radius'>
+      <input id='mass' type='number' placeholder='Mass'>
+      <input id='color' type='color' placeholder='Color'>
+      
+      <button onClick='createPlanet()'>Add Planet</button>
+    </div>
+  </body>
+</html>
