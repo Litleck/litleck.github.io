@@ -5,7 +5,7 @@ var Engine = Matter.Engine,
     World = Matter.World,
     Bodies = Matter.Bodies;
 
-var canvas = document.getElementById('canvas');
+var canvas = document.getElementById("canvas");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight - 50;
@@ -19,18 +19,18 @@ var render = Render.create({
     width: canvas.width,
     height: canvas.height,
     wireframes: false,
-    background: '#121212',
+    background: "#121212",
   }
 })
 
 var mouse = Mouse.create(render.canvas);
 
-window.addEventListener('resize', function(){
+window.addEventListener("resize", function(){
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight - 50;
 });
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener("DOMContentLoaded", function() {
   var population = 100;
 
   for (var i = 0; i < population; i++) {
@@ -53,7 +53,7 @@ mouseConstraint = MouseConstraint.create(engine, {
   }
 });
 
-function Planet (x = 0, y = 0, radius = 100, mass = 100, color = '#6e72ff') {
+function Planet (x = 0, y = 0, radius = 100, mass = 100, color = "#6e72ff") {
   this.x = x;
   this.y = y;
   this.radius = radius;
@@ -70,11 +70,11 @@ function Planet (x = 0, y = 0, radius = 100, mass = 100, color = '#6e72ff') {
 }
 
 function createPlanet() {
-  var x = parseInt(document.getElementById('xPos').value);
-  var y = parseInt(document.getElementById('yPos').value);
+  var x = parseInt(document.getElementById("xPos").value);
+  var y = parseInt(document.getElementById("yPos").value);
 
-  var radius = parseInt(document.getElementById('radius').value);
-  var mass = parseInt(document.getElementById('mass').value);
+  var radius = parseInt(document.getElementById("radius").value);
+  var mass = parseInt(document.getElementById("mass").value);
 
   return new Planet(x, y, radius, mass)
 }

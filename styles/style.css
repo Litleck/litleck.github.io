@@ -1,33 +1,69 @@
 body {
-  background-color: #121212;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  color: white;
   margin: 0;
+
+  background: linear-gradient(24deg, #3111f6, #f6113c);
+  background-size: 400% 400%;
+
+  animation: Gradient 16s ease infinite;
+}
+
+div {
+  margin: 62px;
+  padding: 24px;
+  border-radius: 24px;
+  text-align: center;
+
+  background: #00000080;
+}
+
+@keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  background-color:#242424;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-button {
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul.navbar li a:hover:not(.active) {
+  background-color: #111000;
+}
+
+ul.navbar li a.active {
   background-color: #1ED760;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  padding: 8px 16px;
-  font-size: 16px;
-  transition-duration: 0.4s;
 }
 
-button:hover {
-  background-color: #28ad58;
-  color: white;
+ul.navbar li.right {
+  float: right;
 }
 
-button:active {
-  background-color: #288f4d;
-  box-shadow: 0 5px #666;
-}
-
-input {
-  background-color: white;
-  border-radius: 10px;
-  border: none;
-  padding: 8px 16px;
-  font-size: 16px;
+@media screen and (max-width: 600px) {
+  ul.navbar li.right, 
+  ul.navbar li {
+    float: none;
+  }
 }
