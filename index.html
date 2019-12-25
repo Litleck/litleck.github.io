@@ -1,14 +1,25 @@
 <html>
   <head>
-    <title>Mink</title>
+    <title>Home</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A central hub for all of my past projects.">
+    <meta name="keywords" content="Programming, Scripting, JS, JavaScript">
+    <meta name="author" content="Nicholas Owens">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" type="image/png" href="images/moth.png">
     <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.js"></script>
   </head>
 
   <body>
     <ul class="navbar">
-      <li><a class="active" href="#home">Home</a></li>
+      <li><p>Litleck</p></li>
+
+      <li><a class="active" href="#top">Home</a></li>
       <li><a href="#projects">Projects</a></li>
 
       <li class="right"><a href="#contact">Contact</a></li>
@@ -20,18 +31,21 @@
       </div>
 
       <div id="projects">
-        <h1 align="center">Projects</h1>
+        <h1>Projects</h1>
+
         <p>
           Since I've started programming I've worked on many things.<br>
         </p>
       </div>
 
       <div id="about">
-        <h1 align="center">About</h1>
+        <h1>About</h1>
+        <p>This website serves as a hub for things I've worked on, and what I'm currently working on.</p>
       </div>
 
-      <div id="contact" align="center">
-        <h1 align="center">Contact</h1>
+      <div id="contact">
+        <h1>Contact</h1>
+
         <p>There are two ways I can be contacted:</p>
 
         <p>
@@ -41,5 +55,7 @@
 
         <p>Either way will work but contact via email is preferred.</p>
       </div>
+
+      <script src="scripts/scroll.js"></script>
   </body>
 </html>
