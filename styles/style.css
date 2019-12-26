@@ -14,7 +14,22 @@ body {
   animation: Gradient 16s ease infinite;
 }
 
-div {
+@keyframes PageBackground {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+a {
+  color: #969696;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #484848;
+}
+
+div.sections div {
   margin: 62px;
   padding: 24px;
   border-radius: 24px;
@@ -23,10 +38,13 @@ div {
   background: #00000080;
 }
 
-@keyframes Gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+div.projects div {
+  margin: 30px;
+  padding: 24px;
+  border-radius: 24px;
+  text-align: center;
+
+  background-color: #00000080;
 }
 
 ul.navbar {
@@ -34,7 +52,7 @@ ul.navbar {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background-color:#242424;
+  background-color:#121212;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -58,12 +76,12 @@ ul.navbar li a {
   font-size: 20px;
 }
 
-ul.navbar li a:hover:not(.active) {
-  background-color: #111000;
+ul.navbar li a:hover {
+  background-color: #484848;
 }
 
 ul.navbar li a.active {
-  background-color: #080808;
+  background-color: #242424;
 }
 
 ul.navbar li.right {
@@ -82,10 +100,16 @@ ul.navbar li.right {
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #242424;
+  transition: background-color 5s ease;
+
+  background-color: #121212;
   border-radius: 20px;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background-color: #484848;
+}
+
 ::-webkit-scrollbar-track {
-  background: #121212;
+  background-color: #242424;
 }
